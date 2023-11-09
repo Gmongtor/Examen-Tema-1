@@ -7,6 +7,7 @@ private:
     string nombre;
     int edad;
     string carrera;
+    vector<string> materias;
 public:
     Estudiante (string nombre, int edad, string carrera){
         this->nombre = nombre;
@@ -14,8 +15,8 @@ public:
         this->carrera = carrera;
     }
     void Registrar_Materia(const string& materia){
-        cout << "El estudiante " << nombre << " se ha registrado en la materia " << materia << endl;
         materias.push_back(materia);
+        cout << "El estudiante " << nombre << " se ha registrado en la materia " << materia << endl;
     }
     void mostrar_materias() {
         cout << "El estudiante " << nombre << " esta inscrito en las siguientes materias: " << endl;
