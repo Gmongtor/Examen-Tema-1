@@ -1,4 +1,5 @@
 # Examen-Tema-1
+He utilizados los siguientes recursos externos: ChatGpt y Copilot.
 ## Link
 https://github.com/Gmongtor/Examen-Tema-1.git
 ## Parte 1: Preguntas de opción múltiple.
