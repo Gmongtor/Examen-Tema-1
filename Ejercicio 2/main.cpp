@@ -23,3 +23,18 @@ void Mostrar_Datos(){
     cout << "Carrera: " << carrera << endl;
 }
 };
+int main() {
+    Estudiante estudiante1;
+    string nombre;
+    int edad;
+    string carrera;
+    cout << "Ingrese el nombre del estudiante: ";
+    getline(cin, nombre);
+    cout << "Ingrese la edad del estudiante: ";
+    cin >> edad;
+    cin.ignore();
+    cout << "Ingrese la carrera del estudiante: ";
+    getline(cin, carrera);
+    estudiante1.Establecer_Datos(nombre, edad, carrera);
+    estudiante1.Mostrar_Datos();
+    return 0;
