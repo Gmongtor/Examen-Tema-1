@@ -38,3 +38,4 @@ int main() {
     estudiante1.Establecer_Datos(nombre, edad, carrera);
     estudiante1.Mostrar_Datos();
     return 0;
+}
