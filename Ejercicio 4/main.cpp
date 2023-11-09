@@ -13,13 +13,10 @@ void RegistrarEdad(int edad){
 int main() {
     int edad;
     cout << "Bienvenido al sistema de registro de edades" << endl;
-    cout << "Ingrese su edad: ";
-    cin >> edad;
     try {
         RegistrarEdad(edad);
     } catch (invalid_argument& e) {
-        cout << "Error " << e.what() << endl;
+        cout << "Error: \n" << e.what() << endl;
     }
-    cout << "Su edad es: " << edad << endl;
     return 0;
 }
