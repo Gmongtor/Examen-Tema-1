@@ -12,13 +12,13 @@ int main (){
     vector<float> notas;
     float nota;
     int cantidad_notas;
-    cout << "Ingrese la cantidad de notas: ";
+    cout << "Ingrese la cantidad de notas en este curso: ";
     cin >> cantidad_notas;
     for (int i = 0; i < cantidad_notas; i++){
         cout << "Ingrese la nota " << i+1 << ": ";
         cin >> nota;
         notas.push_back(nota);
     }
-    cout << "El promedio de las notas es: " << calcular_promedio(notas) << endl;
+    cout << "El promedio de tus notas es: " << calcular_promedio(notas) << endl;
     return 0;
 }
