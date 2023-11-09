@@ -19,6 +19,6 @@ int main (){
         cin >> nota;
         notas.push_back(nota);
     }
-    cout << "El promedio de tus notas es: " << calcular_promedio(notas) << endl;
+    cout << "El promedio es: " << calcular_promedio(notas) << endl;
     return 0;
 }
