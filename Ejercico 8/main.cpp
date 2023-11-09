@@ -28,3 +28,20 @@ vector<Estudiante> filtrar_por_grados(const vector<Estudiante>& estudiantes, con
     }
     return estudiantes_filtrados;
 }
+int main(){
+    vector <Estudiante> todos_estudiantes = {
+            Estudiante("Juan", 20, "Ing. Sistemas"),
+            Estudiante("Maria", 19, "Ing. Matematicas"),
+            Estudiante("Pedro", 21, "Ing. Fisica"),
+            Estudiante("Luis", 20, "Ing. Informatica"),
+            Estudiante("Ana", 19, "Ing. Sistemas"),
+            Estudiante("Carlos", 21, "Ing. Sistemas"),
+    };
+    string carrera = "Ing. Sistemas";
+    vector <Estudiante> estudiantes_filtrados = filtrar_por_grados(todos_estudiantes, carrera);
+cout << "Estudiantes de la carrera " << carrera << endl;
+    for (const Estudiante &estudiante: estudiantes_filtrados){
+        estudiante.mostrar_info();
+    }
+    return 0;
+}
