@@ -19,4 +19,12 @@ public:
         cout << "Carrera: " << carrera << endl;
     }
 };
-vector<Estudiante> filtrar_por_grados
+vector<Estudiante> filtrar_por_grados(const vector<Estudiante>& estudiantes, const string &carrera){
+    vector<Estudiante> estudiantes_filtrados;
+    for (const Estudiante &estudiante: estudiantes){
+        if (estudiante.carrera == carrera){
+            estudiantes_filtrados.push_back(estudiante);
+        }
+    }
+    return estudiantes_filtrados;
+}
